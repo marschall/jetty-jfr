@@ -31,7 +31,7 @@ public class JfrHandler extends HandlerWrapper {
   static final String EXCHANGE_ID_ATTRIBUTE = "com.github.marschall.jetty.jfr.exchangeId";
 
   private static final AtomicLong EXCHANGE_ID_GENERATOR = new AtomicLong();
-  
+
   @Override
   public void handle(String target, Request baseRequest, HttpServletRequest request, HttpServletResponse response)
       throws IOException, ServletException {
@@ -155,7 +155,7 @@ public class JfrHandler extends HandlerWrapper {
     @Label("Status")
     @Description("The HTTP response status code")
     private int status;
-    
+
     @Label("Dispatcher Type")
     @Description("The dispatcher type of this request")
     private String dispatcherType;
